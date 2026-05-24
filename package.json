@@ -1,0 +1,11 @@
+{
+  "name": "ydora-luxury-hotel",
+  "version": "2.0.0",
+  "description": "Ydora Luxury Hotel — Bodrum resmi web sitesi",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "resend": "^3.0.0"
+  },
+  "engines": { "node": ">=18" }
+}
