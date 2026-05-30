@@ -24,21 +24,23 @@
    YDORA LUXURY HOTEL — Main Stylesheet
    ════════════════════════════════════════════════════ */
 
+
 :root {
-  --black:    #06060a;
-  --deep:     #0d0d13;
-  --card:     #12121a;
-  --card2:    #17171f;
-  --gold:     #c9a96e;
-  --gold2:    #e8d5a3;
-  --gold-dim: rgba(201,169,110,0.12);
-  --white:    #f0ece4;
-  --muted:    rgba(240,236,228,0.52);
-  --muted2:   rgba(240,236,228,0.75);
-  --border:   rgba(201,169,110,0.22);
-  --border2:  rgba(240,236,228,0.07);
+  --black:    #f7edd8;
+  --deep:     #eedfc0;
+  --card:     #e8d4a8;
+  --card2:    #e2cc9a;
+  --gold:     #8b6508;
+  --gold2:    #a07c10;
+  --gold-dim: rgba(139,101,8,0.12);
+  --white:    #1c0f02;
+  --muted:    rgba(28,15,2,0.62);
+  --muted2:   rgba(28,15,2,0.80);
+  --border:   rgba(139,101,8,0.28);
+  --border2:  rgba(28,15,2,0.12);
   --nav-h:    80px;
 }
+
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1069,20 +1071,143 @@ footer {
 .center { text-align: center; }
 .center .section-label { justify-content: center; }
 
-/* Mobile fixes */
+/* ── Gold theme overrides ── */
+.loader { background: #1c0f02; }
+.loader-word { color: #f7edd8; }
+.loader-sub { color: #c9a96e; }
+
+.mob-menu { background: #f0e4c4; }
+.mob-links a { color: rgba(28,15,2,0.7); }
+.mob-links a:hover { color: var(--gold); }
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(28,15,2,0.15) 0%,
+    rgba(28,15,2,0.35) 50%,
+    rgba(247,237,216,0.92) 100%
+  ) !important;
+}
+.hero-title { color: #1c0f02; }
+.hero-title em { color: var(--gold2); }
+.hero-body { color: rgba(28,15,2,0.78) !important; }
+.hero-stats {
+  background: rgba(247,237,216,0.88) !important;
+  border-color: var(--border) !important;
+}
+.hstat-num { color: var(--gold) !important; }
+.hstat-label { color: rgba(28,15,2,0.62) !important; }
+
+.nav.stuck {
+  background: rgba(247,237,216,0.95) !important;
+  border-color: var(--border) !important;
+}
+.nav-logo-name { color: #1c0f02 !important; }
+.nav-logo-sub { color: var(--gold) !important; }
+.nav-center a { color: rgba(28,15,2,0.62) !important; }
+.nav-center a:hover, .nav-center a.active { color: var(--gold) !important; }
+.nav-burger span { background: #1c0f02 !important; }
+.nav-lang a { color: rgba(28,15,2,0.62) !important; }
+.nav-lang a.active, .nav-lang a:hover { background: var(--gold) !important; color: #f7edd8 !important; }
+.nav-book { color: #f7edd8 !important; background: var(--gold) !important; }
+
+.section-title { color: #1c0f02; }
+.section-title em { color: var(--gold2); }
+.section-body { color: rgba(28,15,2,0.72); }
+
+.about-text p { color: rgba(28,15,2,0.72) !important; }
+.about-feat { background: var(--deep) !important; }
+.about-feat-name { color: #1c0f02 !important; }
+.about-feat-desc { color: rgba(28,15,2,0.65) !important; }
+
+.exp-name { color: #1c0f02 !important; }
+.exp-desc { color: rgba(28,15,2,0.65) !important; }
+.exp-num { color: var(--gold) !important; }
+
+.rcard { background: var(--deep) !important; border-color: var(--border) !important; }
+.rtext { color: #1c0f02 !important; }
+.rname { color: #1c0f02 !important; }
+.rcountry { color: rgba(28,15,2,0.55) !important; }
+
+.faq-q-text { color: #1c0f02 !important; }
+.faq-ans-inner { color: rgba(28,15,2,0.68) !important; }
+.faq-item.open .faq-icon { background: var(--gold) !important; color: #f7edd8 !important; }
+
+.footer-brand-name, .footer-brand-sub { color: #1c0f02 !important; }
+.footer-brand-desc { color: rgba(28,15,2,0.62) !important; }
+.footer-col-title { color: var(--gold) !important; }
+.footer-links a { color: rgba(28,15,2,0.62) !important; }
+.footer-links a:hover { color: #1c0f02 !important; }
+.footer-copy { color: rgba(28,15,2,0.55) !important; }
+.footer-legal a { color: rgba(28,15,2,0.55) !important; }
+.footer-bottom { border-top-color: var(--border) !important; }
+
+.cbox { background: var(--deep) !important; }
+.cbox-label { color: var(--gold) !important; }
+.cbox-val { color: #1c0f02 !important; }
+.cbox-val a { color: #1c0f02 !important; }
+
+.finput, .fselect, .ftextarea { 
+  color: #1c0f02 !important;
+  border-bottom-color: rgba(28,15,2,0.2) !important;
+}
+.finput:focus, .fselect:focus, .ftextarea:focus {
+  border-bottom-color: var(--gold) !important;
+}
+.finput::placeholder, .ftextarea::placeholder { color: rgba(28,15,2,0.35) !important; }
+option { background: var(--deep) !important; color: #1c0f02 !important; }
+.fnote { color: rgba(28,15,2,0.65) !important; }
+.fnote strong { color: var(--gold) !important; }
+.fmsg.ok { background: rgba(139,101,8,0.08) !important; color: var(--gold) !important; }
+
+.room-name { color: #f7edd8 !important; }
+.room-type { color: #e8d4a8 !important; }
+.room-meta { color: rgba(247,237,216,0.8) !important; }
+.room-price { color: #f7edd8 !important; }
+
+.loc-dist-km { color: var(--gold) !important; }
+.loc-dist-place { color: rgba(28,15,2,0.72) !important; }
+.loc-dist { border-bottom-color: var(--border) !important; }
+.loc-cta { color: var(--gold) !important; }
+
+.page-hero-overlay {
+  background: linear-gradient(to bottom, rgba(28,15,2,0.25), rgba(247,237,216,0.88)) !important;
+}
+.page-title { color: #1c0f02 !important; }
+.page-title em { color: var(--gold) !important; }
+.breadcrumb a, .breadcrumb { color: rgba(28,15,2,0.6) !important; }
+.breadcrumb-sep { color: var(--gold) !important; }
+
+.divider-line { background: var(--border) !important; }
+.eyebrow-text { color: var(--gold) !important; }
+.eyebrow-line { background: var(--gold) !important; }
+
+.section-label-text { color: var(--gold) !important; }
+.section-label-line { background: var(--gold) !important; }
+
+.guide-body h2 { color: var(--gold2) !important; }
+.guide-body h3 { color: #1c0f02 !important; }
+.guide-body p { color: rgba(28,15,2,0.72) !important; }
+.guide-body ul li { color: rgba(28,15,2,0.72) !important; border-bottom-color: var(--border) !important; }
+.guide-body ul li::before { color: var(--gold) !important; }
+.sidebar-card { background: var(--deep) !important; border-color: var(--border) !important; }
+.sidebar-card-title { color: var(--gold) !important; border-bottom-color: var(--border) !important; }
+.sidebar-links a { color: rgba(28,15,2,0.65) !important; }
+.sidebar-links li { border-bottom-color: var(--border) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar-track { background: var(--deep) !important; }
+::-webkit-scrollbar-thumb { background: var(--gold) !important; }
+
+/* Mobile */
 @media (max-width: 768px) {
-  body { font-size: 15px; }
   .hero-title { font-size: clamp(36px,10vw,60px) !important; }
   .section-title { font-size: clamp(26px,7vw,42px) !important; }
-  .hero-body { font-size:14px;color:rgba(240,236,228,.92)!important; }
-  .exp-desc,.about-feat-desc,.faq-ans-inner,.section-body { font-size:13px!important;color:rgba(240,236,228,.88)!important; }
-  .rtext { font-size:16px!important; }
+  .hero-body { font-size:14px !important; }
+  .exp-desc,.about-feat-desc,.faq-ans-inner,.section-body { font-size:13px!important; }
   .page-title { font-size:clamp(26px,8vw,46px)!important; }
   .room-meta,.room-btn { opacity:1!important;transform:none!important; }
-  .fgrid { gap:14px!important; }
   .booking-form { padding:18px 14px!important; }
-  .loc-dist-place { font-size:13px!important;color:rgba(240,236,228,.88)!important; }
-  .cbox-val,.footer-links a,.footer-brand-desc { font-size:13px!important;color:rgba(240,236,228,.82)!important; }
   div[style*="grid-template-columns:1fr 1fr"],
   div[style*="grid-template-columns:1fr 1.1fr"] { grid-template-columns:1fr!important; }
 }
