@@ -4,8 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hizmetler | Ydora Luxury Hotel Bodrum</title>
-<meta name="description" content="Ydora Luxury Hotel Bodrum hizmetleri: havuz, fine dining, gulet turu, VIP transfer ve concierge. Bodrum lüks otel deneyimi.">
+<meta name="description" content="Ydora Luxury Hotel Bodrum hizmetleri: infinity havuz, fine dining, gulet turu, VIP transfer, concierge. Bodrum lüks otel deneyimi.">
 <link rel="canonical" href="https://ydoraluxury.com/hizmetler.html">
+<link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/hizmetler.html">
+<link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/hizmetler.html">
+<meta property="og:title" content="Hizmetler | Ydora Luxury Hotel Bodrum">
+<meta property="og:description" content="Ydora Luxury Hotel Bodrum hizmetleri: infinity havuz, fine dining, gulet turu, VIP transfer, concierge. Bodrum lüks otel deneyimi.">
+<meta property="og:url" content="https://ydoraluxury.com/hizmetler.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ydora Luxury Hotel">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,7 +32,7 @@
   --gold2:    #e8d5a3;
   --gold-dim: rgba(201,169,110,0.12);
   --white:    #f0ece4;
-  --muted:    rgba(240,236,228,0.78);
+  --muted:    rgba(240,236,228,0.52);
   --muted2:   rgba(240,236,228,0.75);
   --border:   rgba(201,169,110,0.22);
   --border2:  rgba(240,236,228,0.07);
@@ -1059,120 +1068,168 @@ footer {
 .center { text-align: center; }
 .center .section-label { justify-content: center; }
 
+/* ── Mobile contrast & readability fixes ── */
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+  .hero-title { font-size: clamp(38px, 10vw, 64px) !important; }
+  .section-title { font-size: clamp(28px, 7vw, 44px) !important; }
+  .hero-body { font-size: 14px; color: rgba(240,236,228,0.9) !important; }
+  .exp-desc, .about-feat-desc, .faq-ans-inner, .guide-body p { font-size: 13px !important; color: rgba(240,236,228,0.85) !important; }
+  .rtext { font-size: 16px !important; }
+  .nav-logo-name { font-size: 22px; }
+  .page-title { font-size: clamp(28px, 8vw, 48px) !important; }
+  .rooms-grid { gap: 12px !important; }
+  .room-meta { opacity: 1 !important; transform: none !important; }
+  .room-btn { opacity: 1 !important; transform: none !important; }
+  .fgrid { gap: 16px !important; }
+  .booking-form { padding: 20px 16px !important; }
+  .about-feat-name { font-size: 11px !important; }
+  .hstat-num { font-size: 20px !important; }
+  .hstat-label { font-size: 7px !important; }
+  .loc-dist-place { font-size: 13px !important; color: rgba(240,236,228,0.85) !important; }
+  .loc-dist-km { font-size: 18px !important; }
+  .cbox-val { font-size: 14px !important; }
+  .footer-brand-desc, .footer-links a { font-size: 13px !important; color: rgba(240,236,228,0.8) !important; }
+  .review-name, .rcountry { font-size: 12px !important; }
+}
+
 </style>
 </head>
 <body>
 <div class="cursor" id="cur" aria-hidden="true"></div>
-<div class="cursor-ring" id="curR" aria-hidden="true"></div><nav class="nav" role="navigation">
-  <a href="index.html" class="nav-logo"><span class="nav-logo-name">YDORA</span><span class="nav-logo-sub">Luxury Hotel · Bodrum</span></a>
+<div class="cursor-ring" id="curR" aria-hidden="true"></div><nav class="nav" role="navigation" aria-label="Ana Menü">
+  <a href="/index.html" class="nav-logo" aria-label="Ydora Luxury Hotel Ana Sayfa">
+    <span class="nav-logo-name">YDORA</span>
+    <span class="nav-logo-sub">Luxury Hotel · Bodrum</span>
+  </a>
   <ul class="nav-center">
-    <li><a href="index.html">Ana Sayfa</a></li>
-    <li><a href="odalar.html">Odalar</a></li>
-    <li><a href="hizmetler.html">Hizmetler</a></li>
-    <li><a href="bodrum-rehberi.html">Bodrum Rehberi</a></li>
-    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="/index.html">Ana Sayfa</a></li>
+    <li><a href="/odalar.html">Odalar</a></li>
+    <li><a href="/hizmetler.html"class="active">Hizmetler</a></li>
+    <li><a href="/bodrum-rehberi.html">Bodrum Rehberi</a></li>
+    <li><a href="/iletisim.html">İletişim</a></li>
   </ul>
   <div class="nav-right">
-    <div class="nav-lang"><a href="#" class="active">TR</a><a href="en/index.html">EN</a></div>
-    <a href="rezervasyon.html" class="nav-book">Rezervasyon</a>
+    <div class="nav-lang" aria-label="Dil seçimi"><a href="/index.html" class="active">TR</a><a href="/en/index.html">EN</a></div>
+    <a href="/rezervasyon.html" class="nav-book">Rezervasyon</a>
   </div>
-  <button class="nav-burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="mobMenu"><span></span><span></span><span></span></button>
+  <button class="nav-burger" id="burger" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobMenu"><span></span><span></span><span></span></button>
 </nav>
-<div class="mob-menu" id="mobMenu">
+<div class="mob-menu" id="mobMenu" role="dialog" aria-modal="true">
   <ul class="mob-links">
-    <li><a href="index.html">Ana Sayfa</a></li>
-    <li><a href="odalar.html">Odalar</a></li>
-    <li><a href="hizmetler.html">Hizmetler</a></li>
-    <li><a href="bodrum-rehberi.html">Bodrum Rehberi</a></li>
-    <li><a href="iletisim.html">İletişim</a></li>
+    <li><a href="/index.html">Ana Sayfa</a></li>
+    <li><a href="/odalar.html">Odalar &amp; Süitler</a></li>
+    <li><a href="/hizmetler.html">Hizmetler</a></li>
+    <li><a href="/bodrum-rehberi.html">Bodrum Rehberi</a></li>
+    <li><a href="/iletisim.html">İletişim</a></li>
   </ul>
-  <div class="mob-lang"><a href="#" class="active">TR</a><a href="en/index.html">EN</a></div>
-  <a href="rezervasyon.html" class="mob-book">Rezervasyon Yap →</a>
+  <div class="mob-lang"><a href="/index.html" class="active">TR</a><a href="/en/index.html">EN</a></div>
+  <a href="/rezervasyon.html" class="mob-book">Rezervasyon Yap →</a>
 </div>
 <header class="page-hero">
-  <div class="page-hero-media"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920&q=80" alt="Ydora Luxury Hotel Bodrum havuz ve hizmetler" loading="eager"></div>
+  <div class="page-hero-media"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1920&q=80" alt="Ydora Luxury Hotel Bodrum infinity havuz ve hizmetler" loading="eager"></div>
   <div class="page-hero-overlay" aria-hidden="true"></div>
   <div class="page-hero-content">
-    <div class="breadcrumb"><a href="index.html">Ana Sayfa</a><span class="breadcrumb-sep">›</span><span>Hizmetler</span></div>
+    <div class="breadcrumb"><a href="/index.html">Ana Sayfa</a><span class="breadcrumb-sep">›</span><span>Hizmetler</span></div>
     <h1 class="page-title">Hizmetler &amp; <em>Deneyimler</em></h1>
   </div>
 </header>
 
 <section style="padding:clamp(60px,8vw,120px) 5%;background:var(--black)">
   <div class="section-label reveal"><div class="section-label-line"></div><span class="section-label-text">Sınırsız Ayrıcalık</span></div>
-  <h2 class="section-title reveal d1" style="margin-bottom:56px">Her An <em>Özel</em></h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px">
-
+  <h2 class="section-title reveal d1" style="margin-bottom:52px">Her An <em>Özel</em></h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
     <div style="background:var(--card);border:1px solid var(--border2);overflow:hidden" class="reveal">
       <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80" alt="Ydora Bodrum infinity havuzu" style="width:100%;aspect-ratio:16/9;object-fit:cover">
-      <div style="padding:32px">
+      <div style="padding:clamp(20px,3vw,32px)">
         <div style="font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">01</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-bottom:14px">Infinity Havuz</h2>
-        <p style="font-size:13px;color:rgba(240,236,228,0.8);line-height:1.9">Bodrum manzarasına açılan sonsuzluk havuzumuz, sabahın ilk ışıklarından akşamın kızıllığına her saatte misafirlerimize eşsiz bir deneyim sunar. Havuz kenarı özel kabinler ve içecek servisi mevcuttur.</p>
-        <a href="rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:300;margin-bottom:14px">Infinity Havuz</h2>
+        <p style="font-size:13px;color:rgba(240,236,228,0.85);line-height:1.9">Bodrum manzarasına açılan sonsuzluk havuzumuz, sabahın ilk ışıklarından akşamın kızıllığına her saatte eşsiz bir deneyim sunar. Havuz kenarı özel kabinler ve içecek servisi mevcuttur.</p>
+        <a href="/rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
       </div>
     </div>
-
     <div style="background:var(--card);border:1px solid var(--border2);overflow:hidden" class="reveal d1">
-      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Petra Fine Dining Bodrum" style="width:100%;aspect-ratio:16/9;object-fit:cover">
-      <div style="padding:32px">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Fine Dining Bodrum Ydora" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <div style="padding:clamp(20px,3vw,32px)">
         <div style="font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">02</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-bottom:14px">Petra Fine Dining</h2>
-        <p style="font-size:13px;color:rgba(240,236,228,0.8);line-height:1.9">Bodrum Kalesi manzaralı terasımızda Ege'nin en taze deniz ürünleri ve yerel lezzetlerden ilham alan yaratıcı menüler. Ödüllü şefimiz ve özel şarap koleksiyonuyla unutulmaz akşam yemekleri.</p>
-        <a href="rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:300;margin-bottom:14px">Fine Dining Restoran</h2>
+        <p style="font-size:13px;color:rgba(240,236,228,0.85);line-height:1.9">Bodrum Kalesi manzaralı terasımızda Ege'nin en taze deniz ürünleri ve yerel lezzetlerden ilham alan yaratıcı menüler. Ödüllü şefimiz ve özel şarap koleksiyonuyla unutulmaz akşam yemekleri.</p>
+        <a href="/rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
       </div>
     </div>
-
     <div style="background:var(--card);border:1px solid var(--border2);overflow:hidden" class="reveal d2">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Bodrum gulet tekne turu" style="width:100%;aspect-ratio:16/9;object-fit:cover">
-      <div style="padding:32px">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Bodrum tekne ve gulet turu" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <div style="padding:clamp(20px,3vw,32px)">
         <div style="font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">03</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-bottom:14px">Mavi Yolculuk</h2>
-        <p style="font-size:13px;color:rgba(240,236,228,0.8);line-height:1.9">Özel gulet teknemizle Ege'nin saklı koylarına yolculuk. Günübirlik veya çok günlü turlar, özel mürettebat ve catering hizmeti ile. Concierge ekibimiz her detayı organize eder.</p>
-        <a href="rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:300;margin-bottom:14px">Tekne &amp; Gulet Turları</h2>
+        <p style="font-size:13px;color:rgba(240,236,228,0.85);line-height:1.9">Otele 200 metre mesafede tekne iskelesi. Concierge ekibimiz günübirlik veya çok günlü özel gulet turu organizasyonu yapar. Ege'nin saklı koylarını keşfetmek için mükemmel seçenek.</p>
+        <a href="/rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
       </div>
     </div>
-
     <div style="background:var(--card);border:1px solid var(--border2);overflow:hidden" class="reveal d3">
-      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80" alt="VIP transfer Bodrum" style="width:100%;aspect-ratio:16/9;object-fit:cover">
-      <div style="padding:32px">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80" alt="VIP transfer Bodrum havalimanı" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <div style="padding:clamp(20px,3vw,32px)">
         <div style="font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">04</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;margin-bottom:14px">VIP Transfer &amp; Concierge</h2>
-        <p style="font-size:13px;color:rgba(240,236,228,0.8);line-height:1.9">Milas-Bodrum Havalimanı'ndan özel lüks araçlarla kapıdan kapıya transfer. 7/24 kişisel concierge, aktivite organizasyonu ve özel alışveriş asistanlığı ile her isteğinizi karşılıyoruz.</p>
-        <a href="rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:300;margin-bottom:14px">VIP Transfer &amp; Concierge</h2>
+        <p style="font-size:13px;color:rgba(240,236,228,0.85);line-height:1.9">Milas-Bodrum Havalimanı'ndan (35 km) özel lüks araçlarla kapıdan kapıya transfer. 7/24 kişisel concierge, aktivite organizasyonu ve özel alışveriş asistanlığı ile her isteğinizi karşılıyoruz.</p>
+        <a href="/rezervasyon.html" class="btn-ghost" style="display:inline-flex;margin-top:20px">Rezervasyon →</a>
       </div>
     </div>
-
   </div>
-</section>
-
-<section style="padding:clamp(60px,8vw,100px) 5%;background:var(--deep);border-top:1px solid var(--border2)">
-  <div class="section-label center reveal"><div class="section-label-line"></div><span class="section-label-text">Dahil Hizmetler</span><div class="section-label-line"></div></div>
-  <h2 class="section-title center reveal d1" style="margin-bottom:44px;text-align:center">Her Odada <em>Standart</em></h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;max-width:900px;margin:0 auto">
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal"><div style="font-size:24px;margin-bottom:10px">📶</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">Ücretsiz Wi-Fi</div></div>
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal d1"><div style="font-size:24px;margin-bottom:10px">🛎️</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">24 Saat Oda Servisi</div></div>
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal d2"><div style="font-size:24px;margin-bottom:10px">🚗</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">Valet Park</div></div>
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal d3"><div style="font-size:24px;margin-bottom:10px">☕</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">Kahvaltı</div></div>
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal"><div style="font-size:24px;margin-bottom:10px">🌊</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">Havuz Erişimi</div></div>
-    <div style="background:var(--card);padding:24px;text-align:center;border:1px solid var(--border2)" class="reveal d1"><div style="font-size:24px;margin-bottom:10px">🧳</div><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--white)">Bagaj Hizmeti</div></div>
-  </div>
-</section><div class="contact-band">
-  <div class="cbox reveal"><div class="cbox-icon">✦</div><div class="cbox-label">Adres</div><div class="cbox-val">Cumhuriyet Cad. No:12<br>Bodrum / Muğla</div></div>
-  <div class="cbox reveal d1"><div class="cbox-icon">◈</div><div class="cbox-label">Telefon</div><div class="cbox-val"><a href="tel:+902523160000">+90 252 316 00 00</a></div></div>
-  <div class="cbox reveal d2"><div class="cbox-icon">◇</div><div class="cbox-label">E-Posta</div><div class="cbox-val"><a href="mailto:info@ydoraluxury.com">info@ydoraluxury.com</a></div></div>
-  <div class="cbox reveal d3"><div class="cbox-icon">⬡</div><div class="cbox-label">WhatsApp</div><div class="cbox-val"><a href="https://wa.me/902523160000" target="_blank" rel="noopener">Hızlı Mesaj →</a></div></div>
+  <style>@media(max-width:768px){div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}}</style>
+</section><div class="contact-band" id="iletisim">
+  <div class="cbox reveal"><div class="cbox-icon" aria-hidden="true">📍</div><div class="cbox-label">Adres</div><div class="cbox-val">Umurca Mah. Üçkuyular Cad.<br>No:14/A, Bodrum</div></div>
+  <div class="cbox reveal d1"><div class="cbox-icon" aria-hidden="true">📞</div><div class="cbox-label">WhatsApp</div><div class="cbox-val"><a href="https://wa.me/905437464666" target="_blank" rel="noopener">0543 746 46 66</a></div></div>
+  <div class="cbox reveal d2"><div class="cbox-icon" aria-hidden="true">✉️</div><div class="cbox-label">E-Posta</div><div class="cbox-val"><a href="mailto:info@ydoraluxury.com">info@ydoraluxury.com</a></div></div>
+  <div class="cbox reveal d3"><div class="cbox-icon" aria-hidden="true">📸</div><div class="cbox-label">Instagram</div><div class="cbox-val"><a href="https://www.instagram.com/ydoraluxuryhotel" target="_blank" rel="noopener">@ydoraluxuryhotel</a></div></div>
 </div><footer>
   <div class="footer-grid">
-    <div><div class="footer-brand-name">YDORA</div><div class="footer-brand-sub">Luxury Hotel · Bodrum</div><p class="footer-brand-desc">Bodrum merkezinde 21 lüks oda, havuz ve fine dining ile unutulmaz konaklama deneyimi.</p></div>
-    <div><div class="footer-col-title">Sayfalar</div><ul class="footer-links"><li><a href="index.html">Ana Sayfa</a></li><li><a href="odalar.html">Odalar</a></li><li><a href="hizmetler.html">Hizmetler</a></li><li><a href="bodrum-rehberi.html">Bodrum Rehberi</a></li><li><a href="rezervasyon.html">Rezervasyon</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
-    <div><div class="footer-col-title">Hizmetler</div><ul class="footer-links"><li><a href="hizmetler.html">Havuz</a></li><li><a href="hizmetler.html">Fine Dining</a></li><li><a href="hizmetler.html">Gulet Turları</a></li><li><a href="hizmetler.html">VIP Transfer</a></li><li><a href="hizmetler.html">Concierge</a></li></ul></div>
-    <div><div class="footer-col-title">İletişim</div><ul class="footer-links"><li><a href="tel:+902523160000">+90 252 316 00 00</a></li><li><a href="mailto:info@ydoraluxury.com">info@ydoraluxury.com</a></li><li><a href="https://wa.me/902523160000" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+    <div>
+      <div class="footer-brand-name">YDORA</div>
+      <div class="footer-brand-sub">Luxury Hotel · Bodrum</div>
+      <p class="footer-brand-desc">Bodrum merkezinde 21 lüks oda, infinity havuz ve fine dining ile unutulmaz konaklama deneyimi.</p>
+      <div style="margin-top:20px;display:flex;gap:12px">
+        <a href="https://wa.me/905437464666" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--border);padding:10px 16px">WhatsApp</a>
+        <a href="https://www.instagram.com/ydoraluxuryhotel" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--border);padding:10px 16px">Instagram</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Sayfalar</div>
+      <ul class="footer-links">
+        <li><a href="/index.html">Ana Sayfa</a></li>
+        <li><a href="/odalar.html">Odalar &amp; Süitler</a></li>
+        <li><a href="/hizmetler.html">Hizmetler</a></li>
+        <li><a href="/bodrum-rehberi.html">Bodrum Rehberi</a></li>
+        <li><a href="/rezervasyon.html">Rezervasyon</a></li>
+        <li><a href="/iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Oda Tipleri</div>
+      <ul class="footer-links">
+        <li><a href="/odalar.html">Aile Odası (2 Adet)</a></li>
+        <li><a href="/odalar.html">Double Oda (12 Adet)</a></li>
+        <li><a href="/odalar.html">Standart Oda (7 Adet)</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">İletişim</div>
+      <ul class="footer-links">
+        <li><a href="tel:+905437464666">0543 746 46 66</a></li>
+        <li><a href="mailto:info@ydoraluxury.com">info@ydoraluxury.com</a></li>
+        <li><a href="https://wa.me/905437464666" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/ydoraluxuryhotel" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://maps.google.com/?q=Umurca+Mahallesi+Üçkuyular+Caddesi+No:14/A+Bodrum" target="_blank" rel="noopener">Haritada Gör</a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-copy">© 2025 Ydora Luxury Hotel. Tüm hakları saklıdır.</div>
-    <div class="footer-social"><a href="https://instagram.com/ydoraluxury" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a></div>
-    <div class="footer-legal"><a href="#">Gizlilik</a><a href="#">Çerez Politikası</a></div>
+    <div class="footer-social" aria-label="Sosyal medya">
+      <a href="https://www.instagram.com/ydoraluxuryhotel" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://wa.me/905437464666" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+    </div>
+    <div class="footer-legal"><a href="#">Gizlilik Politikası</a><a href="#">Çerez Politikası</a></div>
   </div>
 </footer><script>
 /* ════════════════════════════════════════════════════
