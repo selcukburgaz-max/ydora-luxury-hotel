@@ -1,111 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- TR — Ana Sayfa -->
+  <!-- TR Sayfalar -->
   <url>
-    <loc>https://ydoraluxury.com/</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ydoraluxury.com/"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://ydoraluxury.com/assets/og.jpg</image:loc>
-      <image:title>Ydora Luxury Hotel Bodrum</image:title>
-    </image:image>
   </url>
-
-  <!-- TR — Odalar -->
   <url>
-    <loc>https://ydoraluxury.com/odalar.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/odalar.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/rooms.html"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/odalar.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/odalar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/rooms.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- TR — Hizmetler -->
   <url>
-    <loc>https://ydoraluxury.com/hizmetler.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/hizmetler.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/services.html"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/hizmetler.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/hizmetler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ydoraluxury.com/rezervasyon.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/rezervasyon.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/reservation.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ydoraluxury.com/iletisim.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/iletisim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ydoraluxury.com/bodrum-rehberi.html</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/bodrum-rehberi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/bodrum-guide.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- TR — Bodrum Rehberi -->
+  <!-- EN Pages -->
   <url>
-    <loc>https://ydoraluxury.com/bodrum-rehberi.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/bodrum-rehberi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/bodrum-guide.html"/>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- TR — Rezervasyon -->
-  <url>
-    <loc>https://ydoraluxury.com/rezervasyon.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/rezervasyon.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/reservation.html"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ydoraluxury.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ydoraluxury.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- TR — İletişim -->
   <url>
-    <loc>https://ydoraluxury.com/iletisim.html</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/iletisim.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/contact.html"/>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://www.ydoraluxury.com/en/rooms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ydoraluxury.com/en/services.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- EN — Home -->
   <url>
-    <loc>https://ydoraluxury.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/"/>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- EN — Rooms -->
-  <url>
-    <loc>https://ydoraluxury.com/en/rooms.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/rooms.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/odalar.html"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/en/reservation.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- EN — Bodrum Guide -->
   <url>
-    <loc>https://ydoraluxury.com/en/bodrum-guide.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/bodrum-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/bodrum-rehberi.html"/>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://www.ydoraluxury.com/en/contact.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
+    <priority>0.6</priority>
   </url>
-
-  <!-- EN — Reservation -->
   <url>
-    <loc>https://ydoraluxury.com/en/reservation.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ydoraluxury.com/en/reservation.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://ydoraluxury.com/rezervasyon.html"/>
-    <lastmod>2025-05-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <loc>https://www.ydoraluxury.com/en/bodrum-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
